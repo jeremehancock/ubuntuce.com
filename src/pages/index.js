@@ -1,23 +1,23 @@
 import React from 'react';
 import Button from '../components/Button';
-import Card from '../components/Card';
-import CustomerCard from '../components/CustomerCard';
+import TeamCard from '../components/TeamCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
-import StatsBox from '../components/StatsBox';
-import customerData from '../data/customer-data';
-import HeroImage from '../svg/HeroImage';
-import SvgCharts from '../svg/SvgCharts';
 import { StaticImage } from 'gatsby-plugin-image';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Href from '../components/Href';
+import wallpapers from '../images/wallpapers.webp';
+import jeremehancock from '../images/jeremehancock.jpg';
+import russmacshane from '../images/russmacshane.jpg';
+import mateogomez from '../images/mateogomez.jpg';
 
 const Index = () => (
   <Layout>
-    <section id="top" className="pt-40">
-      <div className="container mx-auto px-8 lg:flex">
-        <div className="text-center lg:text-left lg:w-1/2 mr-4">
-          <h1 className="text-xl lg:text-2xl xl:text-3xl font-bold leading-tight italic">
+    <section id="top" className="pt-5 lg:pt-20 lg:mx-10">
+      <div
+        className="container mx-auto px-8 lg:flex mb-10 rounded-lg border border-solid border-none md:border-gray-200 p-5 lg:shadow-2xl m-5">
+        <div className="text-left lg:w-1/2 lg:pr-10 mb-10">
+          <h1 className="text-center lg:text-left text-3xl lg:text-2xl xl:text-3xl font-bold leading-tight italic mb-12">
             "freely ye have received, freely give"
           </h1>
           <p className="text-xl mt-6 font-light">
@@ -31,182 +31,189 @@ const Index = () => (
           <p className="text-xl mt-6 font-light">
             The goal of UbuntuCE is to bring the power and security of Ubuntu to Christians.
           </p>
-          <p className="text-xl mt-6 font-light">
-            Along with the standard Ubuntu applications, UbuntuCE includes additional software such
-            as BibleTime, Xiphos, OpenLP, Host Minder, and more.
-          </p>
-          <p className="mt-8 md:mt-12">
-            <AnchorLink href="#download" className="text-white hover:text-white">
-              <Button size="lg">Download Now</Button>
-            </AnchorLink>
-          </p>
         </div>
-        <div className="lg:w-1/2 -z-1">
+        <div className="lg:w-1/2 shadow-2xl">
           <StaticImage
-            src="../images/welcome.png"
+            src="../images/bible-laptop.jpg"
             alt="Welcome To UbuntuCE"
             placeholder="blurred"
-            width={1920}
-            height={1080}
+            className="bg-black min-h-full"
           />
         </div>
       </div>
     </section>
-    <section id="features" className="pt-32 md:pt-64">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Main Features</h2>
-        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
-          <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Service One</p>
-              <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
-            </Card>
-          </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Two</p>
-              <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
-            </Card>
-          </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Three</p>
-              <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
-            </Card>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="flex justify-center">
+      <hr className="container" />
+    </div>
+    <LabelText className="mt-10 text-gray-600 text-center md:-mb-10">Features</LabelText>
     <SplitSection
-      id="screenshots"
+      id="features"
+      reverseOrder
       primarySlot={
-        <div className="pt-32 md:pt-64">
-          <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
+        <div className="lg:pl-32 xl:pl-48">
+          <h3 className="text-2xl md:text-3xl font-semibold leading-tight">Web Content Filtering</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-            against the closest competitors
+            UbuntuCE is pre-configured with OpenDNS FamilyShield. OpenDNS is an industry leading DNS
+            provider that offers fast, secure, DNS with state of the art content filtering.
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={
+        <StaticImage
+          src="../images/opendns-family-shield.png"
+          alt="OpenDNS FamilyShield"
+          placeholder="blurred"
+        />
+      }
+    />
+    <SplitSection
+      primarySlot={
+        <div className="lg:pr-32 xl:pr-48">
+          <h3 className="text-2xl md:text-3xl font-semibold leading-tight">Host Minder</h3>
+          <p className="mt-8 text-xl font-light leading-relaxed">
+            Host Minder is a simple application built with UbuntuCE in mind. It is a simple way to
+            block unwanted websites from your system.
+          </p>
+        </div>
+      }
+      secondarySlot={
+        <StaticImage
+          src="../images/hostminder-window.png"
+          alt="Host Minder"
+          placeholder="blurred"
+        />
+      }
     />
     <SplitSection
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Design And Plan Your Business Growth Steps
-          </h3>
+          <h3 className="text-2xl md:text-3xl font-semibold leading-tight">Bible Study Software</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Once the market analysis process is completed our staff will search for opportunities
-            that are in reach
+            We have included the best Bible Study software available for Linux. Including:
+            BibleTime, Xiphos, and Bibledit.
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<StaticImage src="../images/xiphos.png" alt="Xiphos" placeholder="blurred" />}
     />
     <SplitSection
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Search For Performance Optimization
-          </h3>
+          <h3 className="text-2xl md:text-3xl font-semibold leading-tight">Software for Churches</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            With all the information in place you will be presented with an action plan that your
-            company needs to follow
+            UbuntuCE is a great choice for Churches and includes OpenLP, as well as Presenter by WP.
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={
+        <StaticImage
+          src="../images/worship-extreme-presenter.png"
+          alt="Presenter by WP"
+          placeholder="blurred"
+        />
+      }
     />
-    <section id="contributors" className="pt-32 md:pt-64">
+    <SplitSection
+      reverseOrder
+      primarySlot={
+        <div className="lg:pl-32 xl:pl-48">
+          <h3 className="text-2xl md:text-3xl font-semibold leading-tight">Beautiful Wallpapers</h3>
+          <p className="mt-8 text-xl font-light leading-relaxed">
+            UbuntuCE is packed with a ton of beautiful Christian themed wallpapers to help you make
+            your desktop fit you.
+          </p>
+        </div>
+      }
+      secondarySlot={<img src={wallpapers} alt="UbuntuCE Wallpapers" />}
+    />
+    <div className="flex justify-center mb-8">
+      <hr className="container" />
+    </div>
+    <section id="contributors" className="m-2 mx-10">
       <div className="container mx-auto">
-        <LabelText className="mb-8 text-gray-600 text-center">The UbuntuCE Team</LabelText>
+        <LabelText className="mb-8 text-gray-600 text-center">Contributors</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
-          {customerData.map((customer) => (
-            <div key={customer.customerName} className="flex-1 px-3">
-              <CustomerCard customer={customer} />
-            </div>
-          ))}
+          <div className="flex-1 px-3">
+            <TeamCard image={jeremehancock} name="Jereme Hancock" title="Creator / Developer" />
+          </div>
+          <div className="flex-1 px-3">
+            <TeamCard
+              image={russmacshane}
+              name="Russ MacShane"
+              title="QA / Developer"
+            />
+          </div>
+          <div className="flex-1 px-3">
+            <TeamCard image={mateogomez} name="Mateo Gomez" title="Torrent Manager" />
+          </div>
         </div>
       </div>
     </section>
-    <section id="faq" className="pt-32 md:pt-56">
-      <div className="container mx-auto">
-        <div className="mx-5">
-          {' '}
-          <p>
-            <div className="text-4xl">FAQ</div>
-            <hr className="mb-3" />
-          </p>
-          <p className="mb-3 font-bold">
-            <i>Is Ubuntu Christian Edition officially supported by Canonical?</i>
-          </p>
-          <p className="mb-3">
-            <blockquote className="pl-3">
+    <div className="flex justify-center mb-10">
+      <hr className="container" />
+    </div>
+    <LabelText className="mt-10 mb-3 md:mb-5 text-gray-600 text-center">FAQ</LabelText>
+    <section id="faq" className="lg:mx-10">
+      <div
+        className="container mx-auto rounded-lg border border-solid border-none md:border-gray-200 p-5 lg:shadow-2xl"
+      >
+        <div>
+          <div className="mb-3 font-bold text-xl italic">
+            Is Ubuntu Christian Edition officially supported by Canonical?
+          </div>
+          <div className="mb-3">
+            <div className="pl-3">
               No, it is not "officially" supported. Our project is not funded by Canonical. However,
               we have contacted them regarding our project and they have given us guidelines to
               follow and have thanked us for supporting the Ubuntu Community and introducing Ubuntu
               to the Christian Community.
-            </blockquote>
-          </p>
-          <p className="mb-3 font-bold">
-            <i>Is Ubuntu Christian Edition a new distribution of Ubuntu or a derivative?</i>
-          </p>
-          <p className="mb-3">
-            <blockquote className="pl-3">
+            </div>
+          </div>
+          <div className="mb-3 font-bold text-xl italic">
+            Is Ubuntu Christian Edition a new distribution of Ubuntu or a derivative?
+          </div>
+          <div className="mb-3">
+            <div className="pl-3">
               Well it is really neither. Ubuntu Christian Edition is based directly from the
               standard Ubuntu distribution and contains extra Christian software as well as a few
               additional tools to make the transition to Ubuntu easier for a Linux newcomer. The
               graphical changes are minor and are only intended to tailor the project to Christians.
-            </blockquote>
-          </p>
-          <p className="mb-3 font-bold">
-            <i>
-              Why should I use the Ubuntu Christian Edition if I can install the same software to
-              the default Ubuntu?
-            </i>
-          </p>
-          <p className="mb-3">
-            <blockquote className="pl-3">
+            </div>
+          </div>
+          <div className="mb-3 font-bold text-xl italic">
+            Why should I use the Ubuntu Christian Edition if I can install the same software to the
+            default Ubuntu?
+          </div>
+          <div className="mb-3">
+            <div className="pl-3">
               The concept behind the Ubuntu Christian Edition is not to deviate from the Ubuntu
               community. It is intended to draw a larger Christian base to the already thriving
               community of Ubuntu users. The Ubuntu Christian Edition simply makes it easier for
               Christians who are new to Linux to see the power of Ubuntu combined with the added
               benefit of having the best available Linux Christian software pre-installed.
-            </blockquote>
-          </p>
-          <p className="mb-3 font-bold">
-            <i>Is Ubuntu Christian Edition designed for Protestants or Catholics?</i>
-          </p>
-          <p className="mb-3">
-            <blockquote className="pl-3">
-              Both! Ubuntu Christian Edition will always try to cater to the needs of all
-              Christians. Ubuntu CE is also a great choice for anyone wanting a family friendly
-              operating system complete with web content filtering.
-            </blockquote>
-          </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section className="pt-32" id="download">
-      <div className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-        <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
-        <p className="mt-8 text-xl font-light">
-          Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus
-          in.
-        </p>
+    <div className="flex justify-center">
+      <hr className="container" />
+    </div>
+    <section className="mx-10" id="download">
+      <div
+        className="container mx-auto my-20 rounded-lg border border-solid border-gray-200 text-center p-10 shadow-2xl"
+      >
+        <h3 className="text-xl md:text-5xl font-semibold">Ready to try UbuntuCE?</h3>
         <p className="mt-8">
-          <Button size="xl">Get Started Now</Button>
+          <Href to="https://sourceforge.net/projects/ubuntuce/files/latest/download"><Button>Download Now</Button></Href>
+        </p>
+        <p className="mt-10">
+          Need{' '}
+          <Href to="https://ubuntu.com/tutorials/tutorial-install-ubuntu-desktop?backURL=https://ubuntu.com/download/desktop/thank-you">
+            help on installing
+          </Href>
+          ?
         </p>
       </div>
     </section>

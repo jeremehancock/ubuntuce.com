@@ -11,9 +11,6 @@ module.exports = {
           darker: 'hsl(207, 73%, 44%)',
         },
       },
-      zIndex: {
-        '-1': '-1',
-      }
     },
   },
   variants: {},
