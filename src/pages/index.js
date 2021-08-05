@@ -13,10 +13,10 @@ import mateogomez from '../images/mateogomez.jpg';
 
 const Index = () => (
   <Layout>
-    <section id="top" className="pt-5 lg:pt-20 lg:mx-10">
+    <section id="top" className="pt-5 lg:pt-20 lg:mx-10 mb-20">
       <div className="container mx-auto px-8 lg:flex mb-10 rounded-lg border border-solid border-none md:border-gray-200 p-5 lg:shadow-2xl m-5">
         <div className="text-left lg:w-1/2 lg:pr-10 mb-10">
-          <h1 className="text-center lg:text-left text-3xl lg:text-2xl xl:text-3xl font-bold leading-tight italic mb-12">
+          <h1 className="text-center text-2xl lg:text-4xl mb-12 md:mt-5">
             "freely ye have received, freely give"
           </h1>
           <p className="text-xl mt-6 font-light">
@@ -41,95 +41,103 @@ const Index = () => (
         </div>
       </div>
     </section>
-    <div className="flex justify-center">
-      <hr className="container" />
-    </div>
+    <div className="flex justify-center" id="features" />
     <LabelText className="mt-10 text-gray-600 text-center md:-mb-10">Features</LabelText>
-    <SplitSection
-      id="features"
-      reverseOrder
-      primarySlot={
-        <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
-            Web Content Filtering
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            UbuntuCE is pre-configured with CleanBrowsing. CleanBrowsing is an industry leading DNS
-            provider that offers fast, secure, DNS with state of the art content filtering.
-          </p>
-        </div>
-      }
-      secondarySlot={
-        <StaticImage src="../images/cleanbrowsing.png" alt="CleanBrowsing" placeholder="blurred" />
-      }
-    />
-    <SplitSection
-      primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-2xl md:text-3xl font-semibold leading-tight">Host Minder</h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            Host Minder is a simple application built with UbuntuCE in mind. It is a simple way to
-            block unwanted websites from your system.
-          </p>
-        </div>
-      }
-      secondarySlot={
-        <StaticImage
-          src="../images/hostminder-window.png"
-          alt="Host Minder"
-          placeholder="blurred"
-        />
-      }
-    />
-    <SplitSection
-      reverseOrder
-      primarySlot={
-        <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-2xl md:text-3xl font-semibold leading-tight">Bible Study Software</h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            We have included the best Bible Study software available for Linux. Including:
-            BibleTime, Xiphos, and Bibledit.
-          </p>
-        </div>
-      }
-      secondarySlot={<StaticImage src="../images/xiphos.png" alt="Xiphos" placeholder="blurred" />}
-    />
-    <SplitSection
-      primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
-            Software for Churches
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            UbuntuCE is a great choice for Churches and includes OpenLP, as well as Presenter by WP.
-          </p>
-        </div>
-      }
-      secondarySlot={
-        <StaticImage
-          src="../images/worship-extreme-presenter.png"
-          alt="Presenter by WP"
-          placeholder="blurred"
-        />
-      }
-    />
-    <SplitSection
-      reverseOrder
-      primarySlot={
-        <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-2xl md:text-3xl font-semibold leading-tight">Beautiful Wallpapers</h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            UbuntuCE is packed with a ton of beautiful Christian themed wallpapers to help you make
-            your desktop fit you.
-          </p>
-        </div>
-      }
-      secondarySlot={<img src={wallpapers} alt="UbuntuCE Wallpapers" />}
-    />
-    <div className="flex justify-center mb-8">
-      <hr className="container" />
-    </div>
-    <section id="contributors" className="m-2 mx-10">
+    <section>
+      <SplitSection
+        reverseOrder
+        primarySlot={
+          <div className="lg:pl-32 xl:pl-48">
+            <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
+              Web Content Filtering
+            </h3>
+            <p className="mt-8 text-xl font-light leading-relaxed">
+              UbuntuCE is pre-configured with CleanBrowsing. CleanBrowsing is an industry leading
+              DNS provider that offers fast, secure, DNS with state of the art content filtering.
+            </p>
+          </div>
+        }
+        secondarySlot={
+          <StaticImage
+            src="../images/cleanbrowsing.png"
+            alt="CleanBrowsing"
+            placeholder="blurred"
+          />
+        }
+      />
+      <SplitSection
+        primarySlot={
+          <div className="lg:pr-32 xl:pr-48">
+            <h3 className="text-2xl md:text-3xl font-semibold leading-tight">Host Minder</h3>
+            <p className="mt-8 text-xl font-light leading-relaxed">
+              Host Minder is a simple application built with UbuntuCE in mind. It is a simple way to
+              block unwanted websites from your system.
+            </p>
+          </div>
+        }
+        secondarySlot={
+          <StaticImage
+            src="../images/hostminder-window.png"
+            alt="Host Minder"
+            placeholder="blurred"
+          />
+        }
+      />
+      <SplitSection
+        reverseOrder
+        primarySlot={
+          <div className="lg:pl-32 xl:pl-48">
+            <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
+              Bible Study Software
+            </h3>
+            <p className="mt-8 text-xl font-light leading-relaxed">
+              We have included the best Bible Study software available for Linux. Including:
+              BibleTime, Xiphos, and Bibledit.
+            </p>
+          </div>
+        }
+        secondarySlot={
+          <StaticImage src="../images/xiphos.png" alt="Xiphos" placeholder="blurred" />
+        }
+      />
+      <SplitSection
+        primarySlot={
+          <div className="lg:pr-32 xl:pr-48">
+            <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
+              Software for Churches
+            </h3>
+            <p className="mt-8 text-xl font-light leading-relaxed">
+              UbuntuCE is a great choice for Churches and includes OpenLP, as well as Presenter by
+              WP.
+            </p>
+          </div>
+        }
+        secondarySlot={
+          <StaticImage
+            src="../images/worship-extreme-presenter.png"
+            alt="Presenter by WP"
+            placeholder="blurred"
+          />
+        }
+      />
+      <SplitSection
+        reverseOrder
+        primarySlot={
+          <div className="lg:pl-32 xl:pl-48">
+            <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
+              Beautiful Wallpapers
+            </h3>
+            <p className="mt-8 text-xl font-light leading-relaxed">
+              UbuntuCE is packed with a ton of beautiful Christian themed wallpapers to help you
+              make your desktop fit you.
+            </p>
+          </div>
+        }
+        secondarySlot={<img src={wallpapers} alt="UbuntuCE Wallpapers" />}
+      />
+    </section>
+    <div className="flex justify-center mb-10" id="contributors" />
+    <section className="m-2 mx-10 mb-12">
       <div className="container mx-auto">
         <LabelText className="mb-8 text-gray-600 text-center">Contributors</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
@@ -145,12 +153,10 @@ const Index = () => (
         </div>
       </div>
     </section>
-    <div className="flex justify-center mb-10">
-      <hr className="container" />
-    </div>
+    <div className="flex justify-center mb-10" id="faq" />
     <LabelText className="mt-10 mb-3 md:mb-5 text-gray-600 text-center">FAQ</LabelText>
-    <section id="faq" className="lg:mx-10 md:mb-32">
-      <div className="container mx-auto rounded-lg border border-solid border-none md:border-gray-200 p-5 lg:shadow-2xl">
+    <section className="lg:mx-10 md:mb-32">
+      <div className="container mx-auto rounded-lg border border-solid border-none md:border-gray-200 p-10 lg:shadow-2xl">
         <div>
           <div className="mb-3 font-bold text-xl italic">
             Is UbuntuCE officially supported by Canonical?
@@ -186,15 +192,40 @@ const Index = () => (
               Christian software pre-installed.
             </div>
           </div>
+          <div className="flex justify-center md:justify-end items-center text-lg md:text-xl italic mt-10 md:mt-6 font-bold">
+            Got additional questions? <span className="hidden md:inline md:ml-2">Join us on</span>
+            <Href
+              to="mailto:support@ubuntuce.com?subject=Slack%20Invitation%20Request&body=I%20would%20like%20to%20join%20the%20UbuntuCE%20Slack%20Group."
+              className="ml-2"
+            >
+              <div className="w-20 md:w-40">
+                <StaticImage
+                  src="../images/slack.png"
+                  alt="Join us on Slack"
+                  placeholder="blurred"
+                />
+              </div>
+            </Href>
+          </div>
         </div>
       </div>
     </section>
-    <section className="mx-10" id="download">
-      <div className="container mx-auto mt-10 md:mt-20 mb-20 rounded-lg border border-solid border-gray-200 text-center p-10 shadow-2xl">
+    <div className="flex justify-center mb-10 md:mb-0" id="download" />
+    <section className="mx-10">
+      <div className="container mx-auto mb-20 rounded-lg border border-solid border-gray-200 text-center p-10 shadow-2xl">
         <h3 className="text-xl md:text-5xl font-semibold">Ready to try UbuntuCE?</h3>
-        <p className="mt-8">
-          <Href to="https://sourceforge.net/projects/ubuntuce/files/latest/download">
-            <Button>Download Now</Button>
+        <p className="mt-8 flex flex-col md:flex-row justify-center">
+          <Href
+            to="https://sourceforge.net/projects/ubuntuce/files/ubuntu-ce-20.04.2-2021.07.30.0-desktop-amd64.iso.torrent/download"
+            className="mb-3 md:mb-0 md:mr-2"
+          >
+            <Button className="w-full">Torrent Download</Button>
+          </Href>
+          <Href
+            to="https://sourceforge.net/projects/ubuntuce/files/ubuntu-ce-20.04.2-2021.07.30.0-desktop-amd64.iso/download"
+            className="md:ml-2"
+          >
+            <Button className="w-full">Direct Download</Button>
           </Href>
         </p>
         <p className="mt-10">

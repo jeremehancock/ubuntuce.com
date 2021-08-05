@@ -2,58 +2,79 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import LogoIcon from '../../svg/LogoIcon';
 import Href from '../Href';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Header = () => (
   <header className="sticky top-0 bg-mineshaft shadow z-10">
-    <div className="container flex flex-col sm:flex-row justify-center justify-around items-center mx-auto md:px-8 md:h-20">
-      <div className="flex items-center text-2xl text-white">
+    <div className="container flex flex-col sm:flex-row justify-around mx-auto md:px-8 md:h-20">
+      <div className="flex justify-between items-center text-2xl text-white mb-5 md:mb-0">
         <div className="w-16">
-          <AnchorLink href="#top" offset='130'>
+          <AnchorLink href="#top" offset="130">
             <LogoIcon />
           </AnchorLink>
         </div>
-        <AnchorLink href="#top" className="text-white hover:text-white" offset='130'>UbuntuCE</AnchorLink>
+        <div className="flex-1">
+          <AnchorLink href="#top" className="text-white hover:text-white" offset="130">
+            UbuntuCE
+          </AnchorLink>
+        </div>
+        <div className="md:hidden mr-2 mt-2">
+          <Href to="https://www.patreon.com/ubuntuce">
+            <StaticImage
+              src="../../images/patreon.png"
+              alt="Become a Patron"
+              height={60}
+              placeholder="blurred"
+            />
+          </Href>
+        </div>
       </div>
-      <ul className="flex items-center md:h-20 pb-4 md:pb-0">
+      <ul className="flex justify-center items-center md:h-20 pb-4 md:pb-0">
         <li className="md:hover:bg-mineshaft-hover hover:text-white flex items-center h-full">
           <AnchorLink
-            className="px-4 text-white hover:text-white hover:underline flex items-center h-full"
-            href="#features" offset='200'
+            className="px-4 text-white hover:text-white flex items-center h-full"
+            href="#features"
+            offset="130"
           >
             Features
           </AnchorLink>
         </li>
         <li className="md:hover:bg-mineshaft-hover hover:text-white flex items-center h-full">
           <AnchorLink
-            className="px-4 text-white hover:text-white hover:underline flex items-center h-full"
-            href="#contributors" offset='160'
+            className="px-4 text-white hover:text-white flex items-center h-full"
+            href="#contributors"
+            offset="130"
           >
             Contributors
           </AnchorLink>
         </li>
         <li className="md:hover:bg-mineshaft-hover hover:text-white flex items-center h-full">
           <AnchorLink
-            className="px-4 text-white hover:text-white hover:underline flex items-center h-full"
-            href="#faq" offset='241'
+            className="px-4 text-white hover:text-white flex items-center h-full"
+            href="#faq"
+            offset="130"
           >
             FAQ
           </AnchorLink>
         </li>
         <li className="md:hover:bg-mineshaft-hover hover:text-white flex items-center h-full">
           <AnchorLink
-            className="px-4 text-white hover:text-white hover:underline flex items-center h-full"
-            href="#download" offset="150"
+            className="px-4 text-white hover:text-white flex items-center h-full"
+            href="#download"
+            offset="130"
           >
             Download
           </AnchorLink>
         </li>
       </ul>
-      <div className="hidden lg:block">
-        <Href
-          to="https://www.patreon.com/ubuntuce"
-          className="bg-patreon hover:text-white hover:bg-patreon-darker rounded-xl p-4 text-white font-bold"
-        >
-          Become a Patron
+      <div className="hidden lg:block mt-2">
+        <Href to="https://www.patreon.com/ubuntuce">
+          <StaticImage
+            src="../../images/patreon.png"
+            alt="Become a Patron"
+            height={65}
+            placeholder="blurred"
+          />
         </Href>
       </div>
     </div>
