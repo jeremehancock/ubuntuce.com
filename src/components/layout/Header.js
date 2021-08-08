@@ -24,7 +24,7 @@ const Header = () => (
               src="../../images/patreon.png"
               alt="Become a Patron"
               height={60}
-              placeholder="blurred"
+              placeholder="none"
             />
           </Href>
         </div>
@@ -73,7 +73,7 @@ const Header = () => (
             src="../../images/patreon.png"
             alt="Become a Patron"
             height={65}
-            placeholder="blurred"
+            placeholder="none"
           />
         </Href>
       </div>

@@ -7,13 +7,10 @@ import SplitSection from '../components/SplitSection';
 import { StaticImage } from 'gatsby-plugin-image';
 import Href from '../components/Href';
 import wallpapers from '../images/wallpapers.webp';
-import jeremehancock from '../images/jeremehancock.jpg';
-import russmacshane from '../images/russmacshane.jpg';
-import mateogomez from '../images/mateogomez.jpg';
 
 const Index = () => (
   <Layout>
-    <section id="top" className="pt-5 lg:pt-20 lg:mx-10 mb-20">
+    <section id="top" className="pt-5 lg:pt-20 lg:mx-10 md:mb-20">
       <div className="container mx-auto px-8 lg:flex mb-10 rounded-lg border border-solid border-none md:border-gray-200 p-5 lg:shadow-2xl m-5">
         <div className="text-left lg:w-1/2 lg:pr-10 mb-10">
           <h1 className="text-center text-2xl lg:text-4xl mb-12 md:mt-5">
@@ -21,7 +18,8 @@ const Index = () => (
           </h1>
           <p className="text-xl mt-6 font-light">
             Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system geared
-            towards Christians. It is based on the popular Ubuntu Linux.
+            towards Christians. It is based on{' '}
+            <Href to="https://wiki.ubuntu.com/FocalFossa/ReleaseNotes" className="font-medium">Ubuntu 20.04 LTS</Href>.
           </p>
           <p className="text-xl mt-6 font-light">
             Ubuntu is a complete Linux-based operating system, freely available with both community
@@ -52,8 +50,9 @@ const Index = () => (
               Web Content Filtering
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              UbuntuCE is pre-configured with CleanBrowsing. CleanBrowsing is an industry leading
-              DNS provider that offers fast, secure, DNS with state of the art content filtering.
+              UbuntuCE is pre-configured with{' '}
+              <Href to="https://cleanbrowsing.org/" className="font-medium">CleanBrowsing</Href>, an industry leading DNS
+              provider that offers fast, secure, DNS with state of the art content filtering.
             </p>
           </div>
         }
@@ -70,8 +69,9 @@ const Index = () => (
           <div className="lg:pr-32 xl:pr-48">
             <h3 className="text-2xl md:text-3xl font-semibold leading-tight">Host Minder</h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              Host Minder is a simple application built with UbuntuCE in mind. It is a simple way to
-              block unwanted websites from your system.
+              <Href to="https://github.com/mhancoc7/hostminder#readme" className="font-medium">Host Minder</Href> is a
+              simple application built with UbuntuCE in mind. It is a simple way to block unwanted
+              websites from your system.
             </p>
           </div>
         }
@@ -91,8 +91,10 @@ const Index = () => (
               Bible Study Software
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              We have included the best Bible Study software available for Linux. Including:
-              BibleTime, Xiphos, and Bibledit.
+              We have included the best Bible Study software available for Linux. Including:{' '}
+              <Href to="https://bibletime.info/" className="font-medium">BibleTime</Href>,{' '}
+              <Href to="https://xiphos.org/" className="font-medium">Xiphos</Href>, and{' '}
+              <Href to="https://bibledit.org/" className="font-medium">Bibledit</Href>.
             </p>
           </div>
         }
@@ -107,8 +109,9 @@ const Index = () => (
               Software for Churches
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              UbuntuCE is a great choice for Churches and includes OpenLP, as well as Presenter by
-              WP.
+              UbuntuCE is a great choice for Churches and includes{' '}
+              <Href to="https://openlp.org/" className="font-medium">OpenLP</Href>, and{' '}
+              <Href to="https://www.worshipextreme.com/presenter" className="font-medium">Presenter by WP</Href>.
             </p>
           </div>
         }
@@ -136,19 +139,19 @@ const Index = () => (
         secondarySlot={<img src={wallpapers} alt="UbuntuCE Wallpapers" />}
       />
     </section>
-    <div className="flex justify-center mb-10" id="contributors" />
+    <div className="flex justify-center mt-5 md:mt-3 mb-10" id="contributors" />
     <section className="m-2 mx-10 mb-12">
       <div className="container mx-auto">
         <LabelText className="mb-8 text-gray-600 text-center">Contributors</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
           <div className="flex-1 px-3">
-            <TeamCard image={jeremehancock} name="Jereme Hancock" title="Creator / Developer" />
+            <TeamCard image="jeremehancock" name="Jereme Hancock" title="Creator / Developer" />
           </div>
           <div className="flex-1 px-3">
-            <TeamCard image={russmacshane} name="Russ MacShane" title="QA / Developer" />
+            <TeamCard image="russmacshane" name="Russ MacShane" title="QA / Developer" />
           </div>
           <div className="flex-1 px-3">
-            <TeamCard image={mateogomez} name="Mateo Gomez" title="Torrent Manager" />
+            <TeamCard image="mateogomez" name="Mateo Gomez" title="Torrent Manager" />
           </div>
         </div>
       </div>
@@ -181,7 +184,7 @@ const Index = () => (
             </div>
           </div>
           <div className="mb-3 font-bold text-xl italic">
-            Why should I use the Ubuntu CE if I can install the same software to the default Ubuntu?
+            Why should I use UbuntuCE if I can install the same software on Ubuntu itself?
           </div>
           <div className="mb-3">
             <div className="pl-3">
