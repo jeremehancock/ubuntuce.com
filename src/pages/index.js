@@ -240,7 +240,7 @@ const Index = () => (
         </p>
         <p className="mt-5">
           Already running Ubuntu?{' '}
-          <Href to="https://github.com/mhancoc7/repo.ubuntuce.com#readme">
+          <Href to="https://docs.ubuntuce.com/getting-started/ubuntu-ce-repository">
             Check out the UbuntuCE Repo
           </Href>
           .
