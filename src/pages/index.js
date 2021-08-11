@@ -233,7 +233,7 @@ const Index = () => (
         </p>
         <p className="mt-10">
           Need{' '}
-          <Href to="https://ubuntu.com/tutorials/tutorial-install-ubuntu-desktop?backURL=https://ubuntu.com/download/desktop/thank-you">
+          <Href to="https://docs.ubuntuce.com/getting-started/introduction">
             help on installing
           </Href>
           ?
