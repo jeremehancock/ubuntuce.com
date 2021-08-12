@@ -219,13 +219,13 @@ const Index = () => (
         <h3 className="text-xl md:text-5xl font-semibold">Ready to try UbuntuCE?</h3>
         <p className="mt-8 flex flex-col md:flex-row justify-center">
           <Href
-            to="https://sourceforge.net/projects/ubuntuce/files/ubuntu-ce-20.04.2-2021.07.30.0-desktop-amd64.iso.torrent/download"
+            to="https://sourceforge.net/projects/ubuntuce/files/ubuntu-ce-latest.torrent/download"
             className="mb-3 md:mb-0 md:mr-2"
           >
             <Button className="w-full">Torrent Download</Button>
           </Href>
           <Href
-            to="https://sourceforge.net/projects/ubuntuce/files/ubuntu-ce-20.04.2-2021.07.30.0-desktop-amd64.iso/download"
+            to="https://sourceforge.net/projects/ubuntuce/files/latest/download"
             className="md:ml-2"
           >
             <Button className="w-full">Direct Download</Button>
