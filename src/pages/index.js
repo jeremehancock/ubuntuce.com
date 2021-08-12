@@ -198,7 +198,7 @@ const Index = () => (
           <div className="flex justify-center md:justify-end items-center text-lg md:text-xl italic mt-10 md:mt-6 font-bold">
             Got additional questions? <span className="hidden md:inline md:ml-2">Join us on</span>
             <Href
-              to="mailto:support@ubuntuce.com?subject=Slack%20Invitation%20Request&body=I%20would%20like%20to%20join%20the%20UbuntuCE%20Slack%20Group."
+              to="https://join.slack.com/t/ubuntuce/shared_invite/zt-tp1h4yti-D3tMYPNSPdW5Zn8LBMLy1w"
               className="ml-2"
             >
               <div className="w-20 md:w-40">
@@ -213,9 +213,9 @@ const Index = () => (
         </div>
       </div>
     </section>
-    <div className="flex justify-center mb-10 md:mb-0" id="download" />
+    <div className="flex justify-center mb-5 md:mb-0" id="download" />
     <section className="mx-10">
-      <div className="container mx-auto mb-20 rounded-lg border border-solid border-gray-200 text-center p-10 shadow-2xl">
+      <div className="container mx-auto mb-16 rounded-lg border border-solid border-gray-200 text-center p-10 shadow-2xl">
         <h3 className="text-xl md:text-5xl font-semibold">Ready to try UbuntuCE?</h3>
         <p className="mt-8 flex flex-col md:flex-row justify-center">
           <Href
