@@ -1,1 +1,1 @@
-<h1><img src="https://raw.githubusercontent.com/mhancoc7/repo.ubuntuce.com/main/logo.png" height="50"/> <a href="https://ubuntuce.com">UbuntuCE.com</a></h1>
+<h1><img src="https://raw.githubusercontent.com/mhancoc7/ubuntuce.com/main/src/images/ubuntu-logo.png" height="50"/> <a href="https://ubuntuce.com">UbuntuCE.com</a></h1>
