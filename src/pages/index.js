@@ -19,7 +19,10 @@ const Index = () => (
           <p className="text-xl mt-6 font-light">
             Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system geared
             towards Christians. It is based on{' '}
-            <Href to="https://wiki.ubuntu.com/FocalFossa/ReleaseNotes" className="font-medium">Ubuntu 20.04 LTS</Href>.
+            <Href to="https://ubuntu.com/download/desktop" className="font-medium">
+              Ubuntu 20.04 LTS
+            </Href>
+            .
           </p>
           <p className="text-xl mt-6 font-light">
             Ubuntu is a complete Linux-based operating system, freely available with both community
@@ -45,14 +48,17 @@ const Index = () => (
       <SplitSection
         reverseOrder
         primarySlot={
-          <div className="lg:pl-32 xl:pl-48">
+          <div className="flex flex-col lg:p-20">
             <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
               Web Content Filtering
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
               UbuntuCE is pre-configured with{' '}
-              <Href to="https://cleanbrowsing.org/" className="font-medium">CleanBrowsing</Href>, an industry leading DNS
-              provider that offers fast, secure, DNS with state of the art content filtering.
+              <Href to="https://cleanbrowsing.org/" className="font-medium">
+                CleanBrowsing
+              </Href>
+              , an industry leading DNS provider that offers fast, secure, DNS with state of the art
+              content filtering.
             </p>
           </div>
         }
@@ -66,12 +72,39 @@ const Index = () => (
       />
       <SplitSection
         primarySlot={
-          <div className="lg:pr-32 xl:pr-48">
+          <div className="flex flex-col lg:p-20">
+            <h3 className="text-2xl md:text-3xl font-semibold leading-tight">DNS Minder</h3>
+            <p className="mt-8 text-xl font-light leading-relaxed">
+              If you would prefer to use{' '}
+              <Href to="https://www.opendns.com/setupguide/#familyshield" className="font-medium">
+                OpenDNS FamilyShield
+              </Href> we have included {' '}
+              <Href to="https://github.com/jeremehancock/dnsminder#readme" className="font-medium">
+                DNS Minder
+              </Href>{' '}
+              which makes it easy to switch.
+            </p>
+          </div>
+        }
+        secondarySlot={
+          <StaticImage
+            src="../images/dnsminder-window.png"
+            alt="DNS Minder"
+            placeholder="blurred"
+          />
+        }
+      />
+      <SplitSection
+        reverseOrder
+        primarySlot={
+          <div className="flex flex-col lg:p-20">
             <h3 className="text-2xl md:text-3xl font-semibold leading-tight">Host Minder</h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              <Href to="https://github.com/mhancoc7/hostminder#readme" className="font-medium">Host Minder</Href> is a
-              simple application built with UbuntuCE in mind. It is a simple way to block unwanted
-              websites from your system.
+              <Href to="https://github.com/jeremehancock/hostminder#readme" className="font-medium">
+                Host Minder
+              </Href>{' '}
+              is a simple application built with UbuntuCE in mind. It provides an easy way to block
+              unwanted websites from your system.
             </p>
           </div>
         }
@@ -84,17 +117,25 @@ const Index = () => (
         }
       />
       <SplitSection
-        reverseOrder
         primarySlot={
-          <div className="lg:pl-32 xl:pl-48">
+          <div className="flex flex-col lg:p-20">
             <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
               Bible Study Software
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
               We have included the best Bible Study software available for Linux. Including:{' '}
-              <Href to="https://bibletime.info/" className="font-medium">BibleTime</Href>,{' '}
-              <Href to="https://xiphos.org/" className="font-medium">Xiphos</Href>, and{' '}
-              <Href to="https://bibledit.org/" className="font-medium">Bibledit</Href>.
+              <Href to="https://bibletime.info/" className="font-medium">
+                BibleTime
+              </Href>
+              ,{' '}
+              <Href to="https://xiphos.org/" className="font-medium">
+                Xiphos
+              </Href>
+              , and{' '}
+              <Href to="https://bibledit.org/" className="font-medium">
+                Bibledit
+              </Href>
+              .
             </p>
           </div>
         }
@@ -103,15 +144,22 @@ const Index = () => (
         }
       />
       <SplitSection
+        reverseOrder
         primarySlot={
-          <div className="lg:pr-32 xl:pr-48">
+          <div className="flex flex-col lg:p-20">
             <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
               Software for Churches
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
               UbuntuCE is a great choice for Churches and includes{' '}
-              <Href to="https://openlp.org/" className="font-medium">OpenLP</Href>, and{' '}
-              <Href to="https://www.worshipextreme.com/presenter" className="font-medium">Presenter by WP</Href>.
+              <Href to="https://openlp.org/" className="font-medium">
+                OpenLP
+              </Href>
+              , and{' '}
+              <Href to="https://www.worshipextreme.com/presenter" className="font-medium">
+                Presenter by WP
+              </Href>
+              .
             </p>
           </div>
         }
@@ -124,9 +172,8 @@ const Index = () => (
         }
       />
       <SplitSection
-        reverseOrder
         primarySlot={
-          <div className="lg:pl-32 xl:pl-48">
+          <div className="flex flex-col lg:p-20">
             <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
               Beautiful Wallpapers
             </h3>
@@ -234,7 +281,7 @@ const Index = () => (
         <p className="mt-10">
           Need{' '}
           <Href to="https://docs.ubuntuce.com/getting-started/introduction">
-            help on installing
+            help installing
           </Href>
           ?
         </p>
