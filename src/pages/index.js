@@ -11,7 +11,7 @@ import wallpapers from '../images/wallpapers.webp';
 const Index = () => (
   <Layout>
     <section id="top" className="pt-5 lg:pt-20 lg:mx-10 md:mb-20">
-      <div className="container mx-auto px-8 lg:flex mb-10 rounded-lg border border-solid border-none md:border-gray-200 p-5 lg:shadow-2xl m-5">
+      <div className="container mx-auto px-8 lg:flex mb-10 rounded-lg border border-solid border-gray-200 p-5 shadow-2xl m-5">
         <div className="text-left lg:w-1/2 lg:pr-10 mb-10">
           <h1 className="text-center text-2xl lg:text-4xl mb-12 md:mt-5">
             "freely ye have received, freely give"
@@ -206,7 +206,7 @@ const Index = () => (
     <div className="flex justify-center mb-10" id="faq" />
     <LabelText className="mt-10 mb-3 md:mb-5 text-gray-600 text-center">FAQ</LabelText>
     <section className="lg:mx-10 md:mb-32">
-      <div className="container mx-auto rounded-lg border border-solid border-none md:border-gray-200 p-10 lg:shadow-2xl">
+      <div className="container mx-auto rounded-lg border border-solid border-gray-200 p-10 shadow-2xl">
         <div>
           <div className="mb-3 font-bold text-xl italic">
             Is UbuntuCE officially supported by Canonical?
