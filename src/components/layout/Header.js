@@ -18,16 +18,6 @@ const Header = () => (
             UbuntuCE
           </AnchorLink>
         </div>
-        <div className="md:hidden mr-2 mt-2">
-          <Href to="https://www.patreon.com/ubuntuce">
-            <StaticImage
-              src="../../images/patreon.png"
-              alt="Become a Patron"
-              height={60}
-              placeholder="none"
-            />
-          </Href>
-        </div>
       </div>
       <ul className="flex justify-center items-center md:h-20 pb-4 md:pb-0">
         <li className="md:hover:bg-mineshaft-hover hover:text-white flex items-center h-full">
