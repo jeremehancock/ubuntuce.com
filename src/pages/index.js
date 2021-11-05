@@ -245,7 +245,7 @@ const Index = () => (
           <div className="flex justify-center md:justify-end items-center text-lg md:text-xl italic mt-10 md:mt-6 font-bold">
             Got additional questions? <span className="hidden md:inline md:ml-2">Join us on</span>
             <Href
-              to="https://join.slack.com/t/ubuntuce/shared_invite/zt-tp1h4yti-D3tMYPNSPdW5Zn8LBMLy1w"
+              to="https://join.slack.com/t/ubuntuce/shared_invite/zt-yi4k2d35-GVz_IsgFVmZnCIKSDG_Qiw"
               className="ml-2"
             >
               <div className="w-20 md:w-40">
