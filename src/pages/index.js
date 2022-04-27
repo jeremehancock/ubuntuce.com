@@ -10,17 +10,26 @@ import wallpapers from '../images/wallpapers.webp';
 
 const Index = () => (
   <Layout>
-    <section id="top" className="pt-5 lg:pt-20 md:mx-10 md:mb-20">
+    <section id="top" className="pt-5 lg:pt-20 md:mb-16">
+      <div className="flex justify-center text-center">
+        <h1 className="text-2xl lg:text-4xl text-gray-700">
+          Checkout our{' '}
+          <Href to="https://distrowatch.com/table.php?distribution=ubuntuce">DistroWatch</Href>{' '}
+          page!
+        </h1>
+      </div>
+    </section>
+    <section id="tagline" className="md:mx-10 md:mb-20">
       <div className="container mx-auto px-8 lg:flex mb-10 rounded-lg md:border md:border-solid md:border-gray-200 p-5 md:shadow-2xl m-5">
         <div className="text-left lg:w-1/2 lg:pr-10 mb-10">
-          <h1 className="text-center text-2xl lg:text-4xl mb-12 md:mt-5">
+          <h2 className="text-center text-2xl lg:text-4xl mb-12 md:mt-5">
             "freely ye have received, freely give"
-          </h1>
+          </h2>
           <p className="text-xl mt-6 font-light">
             Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system geared
             towards Christians. It is based on{' '}
             <Href to="https://ubuntu.com/download/desktop" className="font-medium">
-              Ubuntu 20.04 LTS
+              Ubuntu 22.04 LTS
             </Href>
             .
           </p>
@@ -57,7 +66,7 @@ const Index = () => (
               <Href to="https://cleanbrowsing.org/" className="font-medium">
                 CleanBrowsing
               </Href>
-              , an industry leading DNS provider that offers fast, secure, DNS with state of the art
+              , an industry-leading DNS provider that offers fast, secure, DNS with state-of-the art
               content filtering.
             </p>
           </div>
@@ -78,7 +87,19 @@ const Index = () => (
               If you would prefer to use{' '}
               <Href to="https://www.opendns.com/setupguide/#familyshield" className="font-medium">
                 OpenDNS FamilyShield
-              </Href> we have included {' '}
+              </Href>{' '}
+              ,{' '}
+              <Href
+                to="https://blog.cloudflare.com/introducing-1-1-1-1-for-families/"
+                className="font-medium"
+              >
+                1.1.1.1 for Families
+              </Href>{' '}
+              or,{' '}
+              <Href to="https://adguard-dns.io/en/public-dns.html/" className="font-medium">
+                AdGuard Family DNS
+              </Href>{' '}
+              we have included{' '}
               <Href to="https://github.com/jeremehancock/dnsminder#readme" className="font-medium">
                 DNS Minder
               </Href>{' '}
@@ -88,7 +109,7 @@ const Index = () => (
         }
         secondarySlot={
           <StaticImage
-            src="../images/dnsminder-window.png"
+            src="../images/dnsminder-job.png"
             alt="DNS Minder"
             placeholder="blurred"
           />
@@ -110,7 +131,7 @@ const Index = () => (
         }
         secondarySlot={
           <StaticImage
-            src="../images/hostminder-window.png"
+            src="../images/hostminder-job.png"
             alt="Host Minder"
             placeholder="blurred"
           />
@@ -131,16 +152,16 @@ const Index = () => (
               <Href to="https://xiphos.org/" className="font-medium">
                 Xiphos
               </Href>
-              , and{' '}
+              ,{' '}
               <Href to="https://bibledit.org/" className="font-medium">
                 Bibledit
               </Href>
-              .
+              , and more.
             </p>
           </div>
         }
         secondarySlot={
-          <StaticImage src="../images/xiphos.png" alt="Xiphos" placeholder="blurred" />
+          <StaticImage src="../images/xiphos-job.png" alt="Xiphos" placeholder="blurred" />
         }
       />
       <SplitSection
@@ -155,9 +176,13 @@ const Index = () => (
               <Href to="https://openlp.org/" className="font-medium">
                 OpenLP
               </Href>
-              , and{' '}
+              ,{' '}
               <Href to="https://www.worshipextreme.com/presenter" className="font-medium">
-                Presenter by WP
+                Presenter by WorshipTools
+              </Href>
+              , and{' '}
+              <Href to="https://floodlight.gitlab.io/" className="font-medium">
+                FloodLight Presenter
               </Href>
               .
             </p>
@@ -165,8 +190,8 @@ const Index = () => (
         }
         secondarySlot={
           <StaticImage
-            src="../images/worship-extreme-presenter.png"
-            alt="Presenter by WP"
+            src="../images/presenter-job.png"
+            alt="Presenter by WorshipTools"
             placeholder="blurred"
           />
         }
@@ -262,9 +287,9 @@ const Index = () => (
     </section>
     <div className="flex justify-center mb-5 md:mb-0" id="download" />
     <section className="mx-10">
-      <div className="container mx-auto mb-16 rounded-lg md:border md:border-solid md:border-gray-200 text-center p-10 md:shadow-2xl">
+      <div className="container mx-auto mb-16 rounded-lg md:border md:border-solid md:border-gray-200 text-center px-10 pb-10 md:pt-10 md:shadow-2xl">
         <h3 className="text-xl md:text-5xl font-semibold">Ready to try UbuntuCE?</h3>
-        <p className="mt-8 flex flex-col md:flex-row justify-center">
+        <p className="mt-8 flex flex-col md:flex-row justify-center text-center items-center">
           <Href
             to="https://sourceforge.net/projects/ubuntuce/files/ubuntu-ce-latest.torrent/download"
             className="mb-3 md:mb-0 md:mr-2"
@@ -275,15 +300,18 @@ const Index = () => (
             to="https://sourceforge.net/projects/ubuntuce/files/latest/download"
             className="md:ml-2"
           >
-            <Button className="w-full">Direct Download</Button>
+            <img
+              alt="Download UbuntuCE"
+              src="https://a.fsdn.com/con/app/sf-download-button"
+              width="276"
+              height="48"
+              srcSet="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"
+            />
           </Href>
         </p>
         <p className="mt-10">
           Need{' '}
-          <Href to="https://docs.ubuntuce.com/getting-started/introduction">
-            help installing
-          </Href>
-          ?
+          <Href to="https://docs.ubuntuce.com/getting-started/introduction">help installing</Href>?
         </p>
         <p className="mt-5">
           Already running Ubuntu?{' '}
@@ -292,6 +320,28 @@ const Index = () => (
           </Href>
           .
         </p>
+        <div className="mx-5">
+          <div className="flex justify-center items-center md:justify-between mt-10 lg-mt-0 flex-col-reverse md:flex-row gap-6">
+            <div className="flex justify-start gap-2">
+              <Href to="https://sourceforge.net/projects/ubuntuce/">
+                <img src="/oss-users-love-us-white.png" alt="Source Forge Our Customers Love Us" />
+              </Href>
+
+              <Href to="https://sourceforge.net/projects/ubuntuce/">
+                <img src="/oss-rising-star-white.png" alt="SourceForge Rising Star" />
+              </Href>
+            </div>
+
+            <Href to="https://www.patreon.com/ubuntuce">
+              <StaticImage
+                src="../images/patreon.png"
+                alt="Become a Patron"
+                height={100}
+                placeholder="none"
+              />
+            </Href>
+          </div>
+        </div>
       </div>
     </section>
   </Layout>

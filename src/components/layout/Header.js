@@ -19,10 +19,10 @@ const Header = () => (
           </AnchorLink>
         </div>
       </div>
-      <ul className="flex justify-center items-center md:h-20 pb-4 md:pb-0">
+      <ul className="flex justify-center items-center md:h-20 pb-4 md:pb-0 flex-wrap gap-3">
         <li className="md:hover:bg-mineshaft-hover hover:text-white flex items-center h-full">
           <AnchorLink
-            className="px-4 text-white hover:text-white flex items-center h-full"
+            className="px-1 md:px-4 text-white hover:text-white flex items-center h-full"
             href="#features"
             offset="130"
           >
@@ -31,7 +31,7 @@ const Header = () => (
         </li>
         <li className="md:hover:bg-mineshaft-hover hover:text-white flex items-center h-full">
           <AnchorLink
-            className="px-4 text-white hover:text-white flex items-center h-full"
+            className="px-1 md:px-4 text-white hover:text-white flex items-center h-full"
             href="#contributors"
             offset="130"
           >
@@ -40,7 +40,7 @@ const Header = () => (
         </li>
         <li className="md:hover:bg-mineshaft-hover hover:text-white flex items-center h-full">
           <AnchorLink
-            className="px-4 text-white hover:text-white flex items-center h-full"
+            className="px-1 md:px-4 text-white hover:text-white flex items-center h-full"
             href="#faq"
             offset="130"
           >
@@ -49,7 +49,7 @@ const Header = () => (
         </li>
         <li className="md:hover:bg-mineshaft-hover hover:text-white flex items-center h-full">
           <AnchorLink
-            className="px-4 text-white hover:text-white flex items-center h-full"
+            className="px-1 md:px-4 text-white hover:text-white flex items-center h-full"
             href="#download"
             offset="130"
           >
