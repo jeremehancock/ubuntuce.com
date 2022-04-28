@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
         />
         <meta property="og:image" content="https://ubuntuce.com/bible-laptop.jpg" />
 
-        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:card" content="summary" />
         <meta property="twitter:url" content="https://ubuntuce.com/" />
         <meta property="twitter:title" content="Ubuntu Christian Edition -- Linux For Christians" />
         <meta
