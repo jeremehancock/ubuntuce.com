@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
           property="og:description"
           content="This is the project page for Ubuntu Christian Edition."
         />
-        <meta property="og:image" content="https://ubuntuce.com/bible-laptop.jpg" />
+        <meta property="og:image" content="https://ubuntuce.com/ubuntuce.jpg" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://ubuntuce.com/" />
@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
           property="twitter:description"
           content="This is the project page for Ubuntu Christian Edition."
         />
-        <meta property="twitter:image" content="https://ubuntuce.com/bible-laptop.jpg?v1" />
+        <meta property="twitter:image" content="https://ubuntuce.com/ubuntuce.jpg" />
       </Helmet>
       <Header />
       <main className="text-gray-900">{children}</main>
