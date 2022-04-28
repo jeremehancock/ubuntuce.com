@@ -313,14 +313,15 @@ const Index = () => (
           </Href>
           .
         </p>
-        <div className="mx-5">
+        <div className="mx-0">
           <div className="flex justify-center items-center md:justify-between mt-10 lg-mt-0 flex-col-reverse md:flex-row gap-6">
             <div className="mt-5">
               <a href="https://www.netlify.com">
                 <img src={Netlify} alt="Deploys by Netlify" />
               </a>
             </div>
-            <div className="flex justify-start gap-2">
+            <div className="flex justify-start flex-col-reverse md:flex-row gap-6">
+              <div className="flex justify-center gap-2">
               <Href to="https://sourceforge.net/projects/ubuntuce/">
                 <img src="/oss-users-love-us-white.png" alt="Source Forge Our Customers Love Us" />
               </Href>
@@ -328,7 +329,8 @@ const Index = () => (
               <Href to="https://sourceforge.net/projects/ubuntuce/">
                 <img src="/oss-rising-star-white.png" alt="SourceForge Rising Star" />
               </Href>
-              <Href to="https://www.patreon.com/ubuntuce" className="visible lg:hidden ml-3 mt-1 md:mt-2">
+              </div>
+              <Href to="https://www.patreon.com/ubuntuce" className="visible lg:hidden mt-1 md:mt-2">
                 <StaticImage
                   src="../images/patreon.png"
                   alt="Become a Patron"
