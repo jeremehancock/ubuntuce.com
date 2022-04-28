@@ -16,7 +16,7 @@ const Footer = () => (
             </Href>{' '}
             -{' '}
             <Href
-              to="https://docs.ubuntuce.com/ubuntu-ce-information/code-of-conduce"
+              to="https://docs.ubuntuce.com/ubuntu-ce-information/code-of-conduct"
               className="text-white hover:text-slate-200"
             >
               Code of Conduct
