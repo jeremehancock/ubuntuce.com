@@ -2,7 +2,6 @@ import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import { Helmet } from 'react-helmet';
-import metaImage from '../../images/bible-laptop.jpg';
 
 const Layout = ({ children }) => {
   return (
@@ -31,7 +30,7 @@ const Layout = ({ children }) => {
           property="og:description"
           content="This is the project page for Ubuntu Christian Edition."
         />
-        <meta property="og:image" content={metaImage} />
+        <meta property="og:image" content="/bible-laptop.jpg" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://ubuntuce.com/" />
@@ -40,7 +39,7 @@ const Layout = ({ children }) => {
           property="twitter:description"
           content="This is the project page for Ubuntu Christian Edition."
         />
-        <meta property="twitter:image" content={metaImage} />
+        <meta property="twitter:image" content="/bible-laptop.jpg" />
       </Helmet>
       <Header />
       <main className="text-gray-900">{children}</main>
