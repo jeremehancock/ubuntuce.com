@@ -15,9 +15,23 @@ const Layout = ({ children }) => {
         />
         <meta name="title" content="Ubuntu Christian Edition -- Linux For Christians" />
         <meta name="description" content="This is the project page for Ubuntu Christian Edition." />
-        <link rel="apple-touch-icon" sizes="180x180" href="https://ubuntuce.com/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="https://ubuntuce.com/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="https://ubuntuce.com/favicon-16x16.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="https://ubuntuce.com/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="https://ubuntuce.com/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="https://ubuntuce.com/favicon-16x16.png"
+        />
         <link rel="manifest" href="https://ubuntuce.com/site.webmanifest" />
         <link rel="mask-icon" href="https://ubuntuce.com/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />

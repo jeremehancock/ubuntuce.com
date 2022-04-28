@@ -1,10 +1,26 @@
 @tailwind base;
 
 a {
-  @apply text-primary;
+  color: #4199e1;
 }
 a:hover {
-  @apply text-primary-darker;
+  color: #417ee1;
+}
+
+p {
+  line-height: 1.5 !important;
+}
+
+h1 {
+  line-height: 1.5 !important;
+}
+
+h2 {
+  line-height: 1.5 !important;
+}
+
+div {
+  line-height: 1.5 !important;
 }
 
 @tailwind components;
