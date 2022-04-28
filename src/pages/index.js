@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../components/Button';
+// import Button from '../components/Button';
 import TeamCard from '../components/TeamCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
@@ -7,6 +7,7 @@ import SplitSection from '../components/SplitSection';
 import { StaticImage } from 'gatsby-plugin-image';
 import Href from '../components/Href';
 import wallpapers from '../images/wallpapers.webp';
+import Netlify from '../images/netlify.svg';
 
 const Index = () => (
   <Layout>
@@ -108,11 +109,7 @@ const Index = () => (
           </div>
         }
         secondarySlot={
-          <StaticImage
-            src="../images/dnsminder-job.png"
-            alt="DNS Minder"
-            placeholder="blurred"
-          />
+          <StaticImage src="../images/dnsminder-job.png" alt="DNS Minder" placeholder="blurred" />
         }
       />
       <SplitSection
@@ -130,11 +127,7 @@ const Index = () => (
           </div>
         }
         secondarySlot={
-          <StaticImage
-            src="../images/hostminder-job.png"
-            alt="Host Minder"
-            placeholder="blurred"
-          />
+          <StaticImage src="../images/hostminder-job.png" alt="Host Minder" placeholder="blurred" />
         }
       />
       <SplitSection
@@ -322,6 +315,11 @@ const Index = () => (
         </p>
         <div className="mx-5">
           <div className="flex justify-center items-center md:justify-between mt-10 lg-mt-0 flex-col-reverse md:flex-row gap-6">
+            <div className="mt-5">
+              <a href="https://www.netlify.com">
+                <img src={Netlify} alt="Deploys by Netlify" />
+              </a>
+            </div>
             <div className="flex justify-start gap-2">
               <Href to="https://sourceforge.net/projects/ubuntuce/">
                 <img src="/oss-users-love-us-white.png" alt="Source Forge Our Customers Love Us" />
@@ -330,16 +328,15 @@ const Index = () => (
               <Href to="https://sourceforge.net/projects/ubuntuce/">
                 <img src="/oss-rising-star-white.png" alt="SourceForge Rising Star" />
               </Href>
+              <Href to="https://www.patreon.com/ubuntuce" className="visible lg:hidden ml-3 mt-2">
+                <StaticImage
+                  src="../images/patreon.png"
+                  alt="Become a Patron"
+                  height={100}
+                  placeholder="none"
+                />
+              </Href>
             </div>
-
-            <Href to="https://www.patreon.com/ubuntuce">
-              <StaticImage
-                src="../images/patreon.png"
-                alt="Become a Patron"
-                height={100}
-                placeholder="none"
-              />
-            </Href>
           </div>
         </div>
       </div>
