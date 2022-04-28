@@ -307,7 +307,7 @@ const Index = () => (
           <Href to="https://docs.ubuntuce.com/getting-started/introduction">help installing</Href>?
         </p>
         <p className="mt-5">
-          Already running Ubuntu?{' '}
+          Already running Ubuntu 22.04?{' '}
           <Href to="https://docs.ubuntuce.com/getting-started/ubuntu-ce-repository">
             Check out the UbuntuCE Repo
           </Href>
@@ -328,7 +328,7 @@ const Index = () => (
               <Href to="https://sourceforge.net/projects/ubuntuce/">
                 <img src="/oss-rising-star-white.png" alt="SourceForge Rising Star" />
               </Href>
-              <Href to="https://www.patreon.com/ubuntuce" className="visible lg:hidden ml-3 mt-2">
+              <Href to="https://www.patreon.com/ubuntuce" className="visible lg:hidden ml-3 mt-1 md:mt-2">
                 <StaticImage
                   src="../images/patreon.png"
                   alt="Become a Patron"
