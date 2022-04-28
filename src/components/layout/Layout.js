@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
           property="twitter:description"
           content="This is the project page for Ubuntu Christian Edition."
         />
-        <meta property="twitter:image" content="https://ubuntuce.com/ubuntuce.jpg?asdfads" />
+        <meta property="twitter:image" content="https://ubuntuce.com/ubuntuce.jpg" />
       </Helmet>
       <Header />
       <main className="text-gray-900">{children}</main>
