@@ -261,7 +261,15 @@ const Index = () => (
             </div>
           </div>
           <div className="flex justify-center md:justify-end items-center text-lg md:text-xl italic mt-10 md:mt-6 font-bold">
-            Got additional questions? <span className="hidden md:inline md:ml-2">Join us on</span>
+            Got additional questions?{' '}
+            <span className="hidden md:inline md:ml-2">
+              {' '}
+              <Href
+                to="mailto:support@ubuntuce?subject=UbuntuCE Slack Invite Request&body=Please send me an invite to the UbuntuCE Slack."
+              >
+                Join us on
+              </Href>
+            </span>
             <Href
               to="mailto:support@ubuntuce?subject=UbuntuCE Slack Invite Request&body=Please send me an invite to the UbuntuCE Slack."
               className="ml-2"
@@ -322,15 +330,21 @@ const Index = () => (
             </div>
             <div className="flex justify-start flex-col-reverse md:flex-row gap-6">
               <div className="flex justify-center gap-2">
-              <Href to="https://sourceforge.net/projects/ubuntuce/">
-                <img src="/oss-users-love-us-white.png" alt="Source Forge Our Customers Love Us" />
-              </Href>
+                <Href to="https://sourceforge.net/projects/ubuntuce/">
+                  <img
+                    src="/oss-users-love-us-white.png"
+                    alt="Source Forge Our Customers Love Us"
+                  />
+                </Href>
 
-              <Href to="https://sourceforge.net/projects/ubuntuce/">
-                <img src="/oss-rising-star-white.png" alt="SourceForge Rising Star" />
-              </Href>
+                <Href to="https://sourceforge.net/projects/ubuntuce/">
+                  <img src="/oss-rising-star-white.png" alt="SourceForge Rising Star" />
+                </Href>
               </div>
-              <Href to="https://www.patreon.com/ubuntuce" className="visible lg:hidden mt-1 md:mt-2">
+              <Href
+                to="https://www.patreon.com/ubuntuce"
+                className="visible lg:hidden mt-1 md:mt-2"
+              >
                 <StaticImage
                   src="../images/patreon.png"
                   alt="Become a Patron"
