@@ -1,5 +1,5 @@
 import React from 'react';
-// import Button from '../components/Button';
+import Button from '../components/Button';
 import TeamCard from '../components/TeamCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
