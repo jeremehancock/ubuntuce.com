@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="flex-1 px-3">
         <div className="flex flex-wrap justify-around text-center">
           <div className="mb-3 md:mb-0">
-            All Rights Reserved. 2004-2022 -{' '}
+            All Rights Reserved. 2006-2022 -{' '}
             <Href
               to="https://docs.ubuntuce.com/ubuntu-ce-information/license"
               className="text-white hover:text-slate-200"
