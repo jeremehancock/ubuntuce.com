@@ -29,7 +29,7 @@ const BibleStudySoftware = () => {
         </div>
       }
       secondarySlot={
-        <StaticImage src="../../images/xiphos-job.png" alt="Xiphos" placeholder="blurred" />
+        <StaticImage src="../../images/xiphos.png" alt="Xiphos" placeholder="blurred" />
       }
     />
   );

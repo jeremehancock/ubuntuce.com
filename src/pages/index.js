@@ -19,7 +19,7 @@ const Index = () => (
   <Layout>
     <section id="top" className="pt-5 lg:pt-20 md:mb-16">
       <div className="flex justify-center text-center">
-        <h1 className="text-2xl lg:text-4xl text-gray-700">
+        <h1 className="text-2xl lg:text-4xl text-gray-700 mt-5 md:-mt-5">
           Checkout our{' '}
           <Href to="https://distrowatch.com/table.php?distribution=ubuntuce">DistroWatch</Href>{' '}
           page!

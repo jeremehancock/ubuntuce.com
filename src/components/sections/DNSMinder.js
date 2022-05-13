@@ -34,7 +34,7 @@ const DNSMinder = () => {
         </div>
       }
       secondarySlot={
-        <StaticImage src="../../images/dnsminder-job.png" alt="DNS Minder" placeholder="blurred" />
+        <StaticImage src="../../images/dnsminder.png" alt="DNS Minder" placeholder="blurred" />
       }
     />
   );

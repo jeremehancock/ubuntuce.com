@@ -21,7 +21,7 @@ const HostMinder = () => {
         </div>
       }
       secondarySlot={
-        <StaticImage src="../../images/hostminder-job.png" alt="Host Minder" placeholder="blurred" />
+        <StaticImage src="../../images/hostminder.png" alt="Host Minder" placeholder="blurred" />
       }
     />
   );

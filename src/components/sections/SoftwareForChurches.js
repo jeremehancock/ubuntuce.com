@@ -31,7 +31,7 @@ const SoftwareForChurches = () => {
       }
       secondarySlot={
         <StaticImage
-          src="../../images/presenter-job.png"
+          src="../../images/presenter.png"
           alt="Presenter by WorshipTools"
           placeholder="blurred"
         />
