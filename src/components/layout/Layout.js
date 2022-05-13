@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
           property="og:description"
           content="This is the project page for Ubuntu Christian Edition."
         />
-        <meta property="og:image" content="https://ubuntuce.com/ubuntuce.jpg" />
+        <meta property="og:image" content="https://ubuntuce.com/welcome-to-ubuntuce.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://ubuntuce.com/" />
