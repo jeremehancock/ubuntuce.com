@@ -1,6 +1,6 @@
 import React from 'react';
 import SplitSection from '../SplitSection';
-import softwarecenter from "../../images/ubuntu-ce-software-center.png";
+import softwarecenter from "../../images/ubuntu-ce-software-center-bible-study.png";
 
 const SoftwareCenter = () => {
   return (
