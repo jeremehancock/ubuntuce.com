@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
         <meta property="og:title" content="Ubuntu Christian Edition -- Linux For Christians" />
         <meta
           property="og:description"
-          content="This is the project page for Ubuntu Christian Edition."
+          content="UbuntuCE is a Linux Distro geared towards Christians. It comes with pre-configured web content filtering and Bible Study software. It is a great choice for families and Churches."
         />
         <meta property="og:image" content="https://ubuntuce.com/ubuntu-ce-desktop.png" />
 
@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
         <meta property="twitter:title" content="Ubuntu Christian Edition -- Linux For Christians" />
         <meta
           property="twitter:description"
-          content="This is the project page for Ubuntu Christian Edition."
+          content="UbuntuCE is a Linux Distro geared towards Christians. It comes with pre-configured web content filtering and Bible Study software. It is a great choice for families and Churches."
         />
         <meta property="twitter:image" content="https://ubuntuce.com/ubuntu-ce-desktop.png" />
       </Helmet>
