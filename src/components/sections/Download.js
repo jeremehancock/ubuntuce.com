@@ -1,6 +1,6 @@
 import React from 'react';
 import Href from '../Href';
-import Button from '../Button';
+// import Button from '../Button';
 import Netlify from '../../images/netlify.svg';
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -9,12 +9,12 @@ const Download = () => {
     <div className="container mx-auto mb-16 rounded-lg md:border md:border-solid md:border-gray-200 text-center px-10 pb-10 md:pt-10 md:shadow-2xl">
       <h3 className="text-xl md:text-5xl font-semibold">Ready to try UbuntuCE?</h3>
       <p className="mt-8 flex flex-col md:flex-row justify-center text-center items-center">
-        <Href
-          to="https://sourceforge.net/projects/ubuntuce/files/ubuntu-ce-latest.torrent/download"
-          className="mb-3 md:mb-0 md:mr-2"
-        >
-          <Button className="w-full">Torrent Download</Button>
-        </Href>
+        {/*<Href*/}
+        {/*  to="https://sourceforge.net/projects/ubuntuce/files/ubuntu-ce-latest.torrent/download"*/}
+        {/*  className="mb-3 md:mb-0 md:mr-2"*/}
+        {/*>*/}
+        {/*  <Button className="w-full">Torrent Download</Button>*/}
+        {/*</Href>*/}
         <Href
           to="https://sourceforge.net/projects/ubuntuce/files/latest/download"
           className="md:ml-2"

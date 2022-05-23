@@ -14,6 +14,7 @@ import Faq from '../components/sections/Faq';
 import Download from '../components/sections/Download';
 import ParentalControls from '../components/sections/ParentalControls';
 import TimeKpr from '../components/sections/TimeKpr';
+import SoftwareCenter from "../components/sections/SoftwareCenter";
 
 const Index = () => (
   <Layout>
@@ -39,6 +40,7 @@ const Index = () => (
       <TimeKpr />
       <BibleStudySoftware />
       <SoftwareForChurches />
+      <SoftwareCenter />
       <Wallpapers />
     </section>
     <div className="flex justify-center mt-5 md:mt-3 mb-10" id="contributors" />

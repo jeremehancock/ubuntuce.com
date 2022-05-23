@@ -14,10 +14,6 @@ const SoftwareForChurches = () => {
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
             UbuntuCE is a great choice for Churches and includes{' '}
-            <Href to="https://openlp.org/" className="font-medium">
-              OpenLP
-            </Href>
-            ,{' '}
             <Href to="https://www.worshipextreme.com/presenter" className="font-medium">
               Presenter by WorshipTools
             </Href>

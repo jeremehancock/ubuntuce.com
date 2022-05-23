@@ -27,7 +27,7 @@ const Overview = () => {
       </div>
       <div className="lg:w-1/2 shadow-2xl">
         <StaticImage
-          src="../../images/welcome-terminal.png"
+          src="../../images/ubuntu-ce-desktop.png"
           alt="Welcome To UbuntuCE"
           placeholder="blurred"
           className="bg-black min-h-full"

@@ -13,12 +13,12 @@ const BibleStudySoftware = () => {
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
             We have included the best Bible Study software available for Linux. Including:{' '}
-            <Href to="https://bibletime.info/" className="font-medium">
-              BibleTime
-            </Href>
-            ,{' '}
             <Href to="https://xiphos.org/" className="font-medium">
               Xiphos
+            </Href>
+            ,{' '}
+            <Href to="https://bibletime.info/" className="font-medium">
+              BibleTime
             </Href>
             ,{' '}
             <Href to="https://bibledit.org/" className="font-medium">

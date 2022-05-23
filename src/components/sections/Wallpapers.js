@@ -5,6 +5,7 @@ import wallpapers from "../../images/wallpapers.webp";
 const Wallpapers = () => {
   return (
     <SplitSection
+      reverseOrder={true}
       primarySlot={
         <div className="flex flex-col lg:p-20">
           <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
