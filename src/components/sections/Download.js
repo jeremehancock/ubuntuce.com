@@ -37,7 +37,7 @@ const Download = () => {
       <div className="mt-5 flex flex-wrap justify-center gap-2">
         <div>Already running Ubuntu 22.04?</div>
         <div><Href to="https://docs.ubuntuce.com/getting-started/ubuntu-ce-repository">
-          Checkout the UbuntuCE Software Center.
+          Install the UbuntuCE Software Center.
         </Href></div>
       </div>
       <div className="mx-0">
