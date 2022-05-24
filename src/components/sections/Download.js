@@ -34,13 +34,12 @@ const Download = () => {
           />
         </Href>
       </p>
-      <p className="mt-5">
-        Already running Ubuntu 22.04?{' '}
-        <Href to="https://docs.ubuntuce.com/getting-started/ubuntu-ce-repository">
-          Install the UbuntuCE Software Center
-        </Href>
-        .
-      </p>
+      <div className="mt-5 flex flex-wrap justify-center gap-2">
+        <div>Already running Ubuntu 22.04?</div>
+        <div><Href to="https://docs.ubuntuce.com/getting-started/ubuntu-ce-repository">
+          Checkout the UbuntuCE Software Center.
+        </Href></div>
+      </div>
       <div className="mx-0">
         <div className="flex justify-center items-center md:justify-between mt-10 lg-mt-0 flex-col-reverse md:flex-row gap-6">
           <div className="mt-5">
