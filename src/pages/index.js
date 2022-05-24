@@ -56,7 +56,7 @@ const Index = () => (
       <Faq />
     </section>
     <div className="flex justify-center mb-5 md:mb-0" id="download" />
-    <section className="mx-10">
+    <section>
       <Download />
     </section>
   </Layout>
