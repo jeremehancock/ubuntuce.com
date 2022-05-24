@@ -1,6 +1,6 @@
 import React from 'react';
 import Href from '../Href';
-// import Button from '../Button';
+import Button from '../Button';
 import Netlify from '../../images/netlify.svg';
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -16,6 +16,12 @@ const Download = () => {
         {/*  <Button className="w-full">Torrent Download</Button>*/}
         {/*</Href>*/}
         <Href
+          to="https://docs.ubuntuce.com/"
+          className="mb-3 md:mb-0 md:mr-2"
+        >
+          <Button className="w-full"><img src="/docs.png" alt="" className="inline mr-2 -mt-1" /><span className="text-xl"> Documentation</span></Button>
+        </Href>
+        <Href
           to="https://sourceforge.net/projects/ubuntuce/files/latest/download"
           className="md:ml-2"
         >
@@ -28,14 +34,10 @@ const Download = () => {
           />
         </Href>
       </p>
-      <p className="mt-10">
-        Need{' '}
-        <Href to="https://docs.ubuntuce.com/getting-started/introduction">help installing</Href>?
-      </p>
       <p className="mt-5">
         Already running Ubuntu 22.04?{' '}
         <Href to="https://docs.ubuntuce.com/getting-started/ubuntu-ce-repository">
-          Check out the UbuntuCE Repo
+          Install the UbuntuCE Software Center
         </Href>
         .
       </p>
