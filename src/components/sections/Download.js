@@ -19,16 +19,13 @@ const Download = () => {
           to="https://sourceforge.net/projects/ubuntuce/files/ubuntu-ce-latest.torrent/download"
           className="mb-3 md:mb-0 md:mr-3"
         >
-          <Button className="w-full text-xl">Download Torrent</Button>
+          <Button className="w-full">
+            <img src="/torrent-icon.png" alt="" className="inline mr-2 -mt-1" />
+            <span className="text-xl"> Download Torrent</span>
+          </Button>
         </Href>
-        <Href
-          to="https://sourceforge.net/projects/ubuntuce/files/latest/download"
-        >
-          <img
-            alt="Download UbuntuCE"
-            src="/sf-download-button.png"
-            width="300"
-          />
+        <Href to="https://sourceforge.net/projects/ubuntuce/files/latest/download">
+          <img alt="Download UbuntuCE" src="/sf-download-button.png" width="300" />
         </Href>
       </p>
       <div className="mt-5 flex flex-wrap justify-center gap-2">
