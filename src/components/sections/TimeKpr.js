@@ -22,7 +22,7 @@ const TimeKpr = () => {
       }
       secondarySlot={
         <StaticImage
-          src="../../images/timekpr-next.png"
+          src="../../images/timekpr-next-new-2.png"
           alt="Host Minder"
           placeholder="blurred"
         />

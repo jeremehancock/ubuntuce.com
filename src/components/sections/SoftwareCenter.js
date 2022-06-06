@@ -1,6 +1,6 @@
 import React from 'react';
 import SplitSection from '../SplitSection';
-import softwarecenter from "../../images/ubuntu-ce-software-center.png";
+import { StaticImage } from 'gatsby-plugin-image';
 
 const SoftwareCenter = () => {
   return (
@@ -11,11 +11,18 @@ const SoftwareCenter = () => {
             UbuntuCE Software Center
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Easily add and remove software using the UbuntuCE Software Center. This will allow you to easily configure UbuntuCE to meet your needs.
+            Easily add and remove software using the UbuntuCE Software Center. This will allow you
+            to easily configure UbuntuCE to meet your needs.
           </p>
         </div>
       }
-      secondarySlot={<img src={softwarecenter} alt="UbuntuCE Software Center" />}
+      secondarySlot={
+        <StaticImage
+          src="../../images/ubuntu-ce-software-center-new.png"
+          alt="UbuntuCE Software Center"
+          placeholder="blurred"
+        />
+      }
     />
   );
 };
