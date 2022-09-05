@@ -1,7 +1,7 @@
 import React from 'react';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
-import Href from '../components/Href';
+// import Href from '../components/Href';
 import HostMinder from '../components/sections/Hostminder';
 import DNSMinder from '../components/sections/DNSMinder';
 import WebContentFiltering from '../components/sections/WebContentFiltering';
