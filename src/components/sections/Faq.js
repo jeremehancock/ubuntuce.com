@@ -49,7 +49,7 @@ const Faq = () => {
             </Href>
           </span>
           <Href
-            to="mailto:support@ubuntuce?subject=UbuntuCE Slack Invite Request&body=Please send me an invite to the UbuntuCE Slack."
+            to="mailto:support@ubuntuce.com?subject=UbuntuCE Slack Invite Request&body=Please send me an invite to the UbuntuCE Slack."
             className="ml-2"
           >
             <div className="w-20 md:w-40">

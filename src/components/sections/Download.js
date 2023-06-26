@@ -32,7 +32,7 @@ const Download = () => {
         <div>Already running Ubuntu 22.04?</div>
         <div>
           <Href to="https://docs.ubuntuce.com/getting-started/ubuntu-ce-repository">
-            Checkout the UbuntuCE Software Center.
+            Check out the UbuntuCE Software Center.
           </Href>
         </div>
       </div>
